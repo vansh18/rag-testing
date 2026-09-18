@@ -1,0 +1,1 @@
+Orders can be cancelled before they are dispatched.
