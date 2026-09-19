@@ -1,4 +1,9 @@
-from app.tools import get_order_status, cancel_order
+from app.tools import (
+    OrderServiceError,
+    cancel_order,
+    get_order_status,
+)
+
 
 class SimpleAgent:
 
@@ -11,7 +16,7 @@ class SimpleAgent:
 
             try:
                 return get_order_status(order_id)
-            except Exception:
+            except OrderServiceError:
                 return "Unable to retrieve the order status right now."
 
         if "cancel" in request_lower:
@@ -19,7 +24,7 @@ class SimpleAgent:
 
             try:
                 return cancel_order(order_id)
-            except Exception:
+            except OrderServiceError:
                 return "Unable to cancel the order right now."
 
         return "I don't know how to handle that request."

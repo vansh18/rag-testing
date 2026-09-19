@@ -1,4 +1,5 @@
-from app.rag import build_context, build_prompt, answer_question
+from app.rag import answer_question, build_context, build_prompt
+
 
 class MaliciousLLM:
     def generate(self, prompt: str) -> str:

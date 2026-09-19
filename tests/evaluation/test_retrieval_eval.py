@@ -1,6 +1,7 @@
 from app.retriever import load_documents, retrieve
 from tests.evaluation.dataset import EVALUATION_DATASET
 
+
 def test_retrieval_evaluation():
 
     documents = load_documents()

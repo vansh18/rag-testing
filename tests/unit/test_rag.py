@@ -1,7 +1,6 @@
-from app.rag import build_context, build_prompt, answer_question
-from app.llm import MockLLM
-from app.retriever import load_documents
 from unittest.mock import Mock
+
+from app.rag import answer_question, build_context, build_prompt
 
 
 def test_build_context():

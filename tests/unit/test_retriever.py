@@ -1,5 +1,6 @@
 from app.retriever import load_documents, retrieve
 
+
 def test_load_documents():
 
     documents = load_documents()

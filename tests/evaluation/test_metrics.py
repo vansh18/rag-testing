@@ -1,12 +1,13 @@
 from app.evaluation import (
-    calculate_hit_rate, 
-    calculate_recall, 
-    calculate_precision,
+    answer_contains_expected_information,
+    calculate_hit_rate,
     calculate_mrr,
+    calculate_precision,
+    calculate_recall,
     context_contains_expected_document,
     is_answer_grounded,
-    answer_contains_expected_information
 )
+
 
 def test_hit_rate():
 

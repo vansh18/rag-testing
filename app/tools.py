@@ -14,3 +14,7 @@ def get_order_status(order_id: str) -> str:
 def cancel_order(order_id: str) -> str:
 
     return f"Order {order_id} has been cancelled."
+
+
+class OrderServiceError(Exception):
+    pass

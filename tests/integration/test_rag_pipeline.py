@@ -2,6 +2,7 @@ from app.llm import MockLLM
 from app.rag import answer_question
 from app.retriever import load_documents
 
+
 def test_rag_pipeline_refund():
 
     documents = load_documents()

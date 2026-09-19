@@ -5,7 +5,6 @@ from app.llm import MockLLM
 from app.rag import answer_question
 from app.retriever import load_documents
 
-
 app = FastAPI(title="RAG Testing Demo")
 
 documents = load_documents()

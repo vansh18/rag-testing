@@ -1,5 +1,6 @@
 from app.retriever import retrieve
 
+
 def calculate_hit_rate(results: list[bool]) -> float:
 
     if not results:
