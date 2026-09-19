@@ -28,8 +28,8 @@ jobs:
       - name: Run MyPy
         run: mypy app
 
-      - name: Run tests
-        run: python -m pytest -v
+      - name: Run tests with coverage
+        run: python -m pytest -v --cov=app --cov-report=term-missing --cov-fail-under=80
 
       - name: Run evaluation
         run: python evaluate.py

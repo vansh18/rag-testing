@@ -2,7 +2,6 @@ from app.evaluation import evaluate_retrieval
 from app.retriever import load_documents
 from tests.evaluation.dataset import EVALUATION_DATASET
 
-
 MIN_HIT_RATE = 0.90
 MIN_MRR = 0.90
 
