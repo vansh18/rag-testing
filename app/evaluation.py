@@ -68,7 +68,7 @@ def answer_contains_expected_information(
 
 
 def evaluate_retrieval(
-        documents: list[str],
+    documents: list[dict],
         dataset: list[dict],
         top_k: int=2,
 ) -> dict:
