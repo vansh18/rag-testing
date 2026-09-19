@@ -6,3 +6,4 @@ httpx
 ruff
 mypy
 pytest-cov
+bandit
