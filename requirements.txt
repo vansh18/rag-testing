@@ -7,3 +7,4 @@ ruff
 mypy
 pytest-cov
 bandit
+pip-audit

@@ -31,6 +31,9 @@ jobs:
       - name: Run Bandit
         run: bandit -r app
 
+      - name: Run dependency security scan
+        run: pip-audit
+
       - name: Run tests with coverage
         run: python -m pytest -v --cov=app --cov-report=term-missing --cov-fail-under=80
 
