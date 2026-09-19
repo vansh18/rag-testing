@@ -30,3 +30,6 @@ jobs:
 
       - name: Run tests
         run: python -m pytest -v
+
+      - name: Run evaluation
+        run: python evaluate.py
