@@ -1,6 +1,7 @@
 from unittest.mock import patch
 
 from app.agent import SimpleAgent
+from app.tools import OrderServiceError
 
 
 def test_agent_gets_order_status():
@@ -33,7 +34,7 @@ def test_agent_chooses_status_tool(mock_get_status):
 @patch("app.agent.get_order_status")
 def test_agent_handles_tool_failure(mock_get_status):
 
-    mock_get_status.side_effect = Exception("Order service is down")
+    mock_get_status.side_effect = OrderServiceError("Order service is down")
 
     agent = SimpleAgent()
 
